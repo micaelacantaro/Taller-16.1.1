@@ -1,0 +1,81 @@
+/* Estilo global */
+body {
+    background: radial-gradient(circle, #ff9a8b 20%, #ff6a88 40%, #d4a5a5 60%, #3f72af 80%); /* Gradiente radial suave */
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: 200% 200%; /* Asegura que los colores se mezclen bien */
+    animation: gradientAnimation 10s ease infinite; /* Animación para que el fondo se mueva */
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background-color: #2d87f0; /* Fondo azul para el título */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#efemerides-container {
+    margin-top: 20px;
+    display: block;
+}
+
+#efemerides-list {
+    margin-top: 20px;
+}
+
+/* Estilo de cada evento */
+.evento {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    color: #333;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 8px solid #f56c42; /* Borde color naranja */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.evento:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes en el texto */
+.evento .year {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #2d87f0;
+    margin-bottom: 10px;
+}
+
+.evento .text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+#loading {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
